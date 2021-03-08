@@ -13,9 +13,45 @@ Sass facilitates you to write clean, easy and less CSS in a programming construc
 - Code has to be compiled
 - Difficult Troubleshooting<br>
 6. What is a **SASS Variable**? Explain why are useful<br>
+Sass variables are simple: you assign a value to a name that begins with $, and then you can refer to that name instead of the value itself. But despite their simplicity, they're one of the most useful tools Sass brings to the table. Variables make it possible to reduce repetition, do complex math, configure libraries, and much more. <br>
 7. Explain the SASS **variables** property with an example. <br>
+it’s written <variable>: <expression>. <br>
+```
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+
+.alert {
+  border: 1px solid $border-dark;
+}
+```
+
 8. What is a **mixin**? Why is it important? Give an example<br>
-9. What is **SCSS**? Give an example<br>
+Mixins allow you to define styles that can be re-used throughout your stylesheet. They make it easy to avoid using non-semantic classes like, and to distribute collections of styles in libraries.
+Mixins are defined using the @mixin at-rule, which is written @mixin <name> { ... } or @mixin name(<arguments...>) { ... }. A mixin’s name can be any Sass identifier, and it can contain any statement other than top-level statements. They can be used to encapsulate styles that can be dropped into a single style rule; they can contain style rules of their own that can be nested in other rules or included at the top level of the stylesheet; or they can just serve to modify variables. Mixins are included into the current context using the @include at-rule, which is written @include <name> or @include <name>(<arguments...>), with the name of the mixin being included.
+```
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+nav ul {
+  @include horizontal-list;
+}
+```
+9.  What is **SCSS**? Give an example<br>
 10. What is **SASS**? Give an example<br>
 11. What is the difference between **.scss** and **.sass** syntax. <br>
 12. In which cases would we use **SCSS**? And in which cases would we use **SASS**?<br>
