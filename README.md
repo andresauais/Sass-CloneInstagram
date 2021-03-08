@@ -1,5 +1,5 @@
 # Sass-CloneInstagram
-What is **SASS**? What does **SASS** stand for?
+What is **SASS**? What does **SASS** stand for? <br>
 Sass stands for Syntactically Awesome Stylesheet. Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.
 What is a **CSS pre-processor**?
 CSS preprocessors are scripting languages that extend the default capabilities of CSS. They enable us to use logic in our CSS code, such as variables, nesting, inheritance, mixins, functions, and mathematical operations. CSS preprocessors all do similar things but in a different way and with their own syntaxes.
