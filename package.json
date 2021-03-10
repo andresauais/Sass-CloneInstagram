@@ -1,0 +1,27 @@
+{
+  "name": "Sass-CloneInstagram",
+  "version": "1.0.0",
+  "description": "1. What is **SASS**? What does **SASS** stand for? <br> Sass stands for Syntactically Awesome Stylesheet. Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself. <br> 2. What is a **CSS pre-processor**?<br> CSS preprocessors are scripting languages that extend the default capabilities of CSS. They enable us to use logic in our CSS code, such as variables, nesting, inheritance, mixins, functions, and mathematical operations. CSS preprocessors all do similar things but in a different way and with their own syntaxes. <br> 3. What does a **pre-processor** have to do with **SASS**?<br> Sass is a pre-processor itself. <br> 4. Why use **SASS**?<br> Sass facilitates you to write clean, easy and less CSS in a programming construct. It contains fewer codes so you can write CSS quicker. It is more stable, powerful, and elegant because it is an extension of CSS.<br> 5. **SASS** has disadvantages? Which are?<br> - The developer must have enough time to learn new features present in this preprocessor before using it. - Using Sass may cause losing benefits of the browser’s built-in element inspector. - Code has to be compiled - Difficult Troubleshooting<br> 6. What is a **SASS Variable**? Explain why are useful<br> Sass variables are simple: you assign a value to a name that begins with $, and then you can refer to that name instead of the value itself. But despite their simplicity, they're one of the most useful tools Sass brings to the table. Variables make it possible to reduce repetition, do complex math, configure libraries, and much more. <br> 7. Explain the SASS **variables** property with an example. <br> it’s written variable: expression. <br> ``` $base-color: #c6538c; $border-dark: rgba($base-color, 0.88);",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.sass css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresauais/Sass-CloneInstagram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresauais/Sass-CloneInstagram/issues"
+  },
+  "homepage": "https://github.com/andresauais/Sass-CloneInstagram#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "boxicons": "^2.0.7"
+  }
+}

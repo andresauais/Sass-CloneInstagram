@@ -1,0 +1,258 @@
+/*Reset*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none; }
+
+footer, header, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+/*variables*/
+body {
+  margin: auto;
+  background-color: #FAFAFA;
+  font-family: "Arial", sans-serif;
+  margin-top: 32px; }
+
+main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; }
+
+.mobilePic {
+  width: 454px;
+  height: 618px;
+  background-image: url("../img/login_mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .mobilePic .postMobile {
+    position: relative;
+    left: 148px;
+    top: 92px;
+    width: 247px; }
+
+#rightContainer {
+  width: 348px;
+  margin-top: 28px; }
+
+#logInContainer {
+  border: 1px solid #DBDBDB;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #logInContainer #logInForm {
+    display: flex;
+    flex-direction: column; }
+    #logInContainer #logInForm h1 {
+      font-family: "Billabong", sans-serif;
+      color: #262626;
+      font-weight: 400;
+      font-size: 50px;
+      text-align: center;
+      margin: 22px auto 12px;
+      margin-bottom: 30px;
+      margin-top: 22px; }
+    #logInContainer #logInForm input {
+      width: 258px;
+      margin: auto;
+      margin-top: 10px;
+      padding: 9px 0px 7px 8px;
+      background-color: #FAFAFA;
+      border: 1px solid #DBDBDB;
+      border-radius: 3px;
+      font-size: 12px;
+      line-height: 18px; }
+    #logInContainer #logInForm input[type=submit] {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #B9DFFC;
+      color: white;
+      border: none;
+      font-weight: bold;
+      font-size: 14px; }
+  #logInContainer div {
+    width: 258px;
+    margin: auto; }
+    #logInContainer div h2 {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #DBDBDB;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      color: #8E8E8E;
+      font-size: 12px;
+      font-weight: 900; }
+      #logInContainer div h2 span {
+        background: #fff;
+        padding: 0 10px; }
+  #logInContainer #facebook {
+    text-align: center;
+    color: #385185;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; }
+    #logInContainer #facebook p {
+      font-size: 15px;
+      font-weight: 900;
+      margin-left: 10px; }
+    #logInContainer #facebook i {
+      font-size: 22px; }
+  #logInContainer #forgot {
+    text-align: center;
+    color: #00376B;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 20px; }
+
+#registerContainer {
+  border: 1px solid #DBDBDB;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px; }
+  #registerContainer span {
+    color: #0095F6;
+    font-weight: 900; }
+
+#downloadContainer {
+  text-align: center;
+  margin-top: 20px; }
+  #downloadContainer .downloadImg {
+    margin-top: 20px;
+    width: 136px; }
+
+footer {
+  margin-top: 40px;
+  margin-bottom: 52px;
+  text-align: center;
+  color: #8E8E8E;
+  font-size: 12px; }
+  footer div {
+    display: flex;
+    justify-content: center; }
+    footer div p {
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 10px; }
+  footer #btmFoot {
+    margin-top: 10px; }
+
+/*home page*/
+nav {
+  margin: auto;
+  background-color: white;
+  display: flex;
+  margin-top: -32px;
+  justify-content: center;
+  align-items: center; }
+  nav div {
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    nav div h1 {
+      width: 300px;
+      font-family: "Billabong", sans-serif;
+      color: #262626;
+      font-weight: 400;
+      font-size: 40px;
+      padding: 20px; }
+    nav div input[type=text] {
+      width: 300px;
+      margin: auto;
+      margin-top: 25px;
+      padding: 9px 0px 7px 8px;
+      background-color: #FAFAFA;
+      border: 1px solid #DBDBDB;
+      border-radius: 3px;
+      font-size: 12px;
+      line-height: 18px; }
+    nav div div {
+      width: 300px;
+      justify-content: flex-end; }
+      nav div div i {
+        font-size: 25px;
+        color: #262626; }
+      nav div div .profileNav {
+        width: 7%;
+        border-radius: 100%; }
+
+.postMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+article {
+  border: 1px solid #DBDBDB;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px; }
+  article .postHeader {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    letter-spacing: -0.8px;
+    font-weight: 900; }
+    article .postHeader img {
+      width: 5%;
+      border-radius: 100%;
+      margin-right: 8px;
+      margin-left: 10px; }
+  article .postComment {
+    color: #262626;
+    margin-left: 10px; }
+    article .postComment .postIcons {
+      font-size: 25px;
+      margin-top: 5px; }
+    article .postComment .likes {
+      font-weight: bold;
+      margin-bottom: 10px; }
+    article .postComment span {
+      font-weight: bold;
+      line-spacing: -0.8px; }
+    article .postComment .comment {
+      font-size: 14px; }
+    article .postComment .date {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #A6A6A6; }
